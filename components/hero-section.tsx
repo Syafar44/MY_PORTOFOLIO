@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export function HeroSection() {
   const badgeConfig = {
     badgeId: "software engineer",
-    profileImage: '/me.jpeg',
+    profileImage: '/me.png',
     role: "SYAFARUDDIN",
   }
 

@@ -273,7 +273,7 @@ export default function Badge({
       {/* Badge - draggable on desktop, static on mobile */}
       <motion.div
         ref={badgeRef}
-        className={`${isMobile ? "relative mx-auto" : "absolute"} flex flex-col ${isMobile ? "w-[320px] h-[440px]" : "w-[380px] h-[500px]"} rounded-2xl overflow-hidden ${!isMobile ? "cursor-grab active:cursor-grabbing" : ""}`}
+        className={`${isMobile ? "relative mx-auto" : "absolute"} flex flex-col ${isMobile ? "w-[320px] h-[440px]" : "w-[340px] h-[500px]"} rounded-2xl overflow-hidden ${!isMobile ? "cursor-grab active:cursor-grabbing" : ""}`}
         style={{
           x: isMobile ? 0 : x,
           y: isMobile ? 0 : y,
@@ -291,7 +291,7 @@ export default function Badge({
         {/* Badge hole for lanyard - only for desktop */}
         {!isMobile && (
           <div
-            className="absolute w-6 h-6 bg-gray-900 rounded-full border-2 border-gray-800"
+            className="absolute w-6 h-6 bg-gray-900 rounded-full "
             style={{
               left: "50%",
               top: "-3px",
@@ -333,10 +333,10 @@ export default function Badge({
           <div className="flex-1 flex items-center justify-center px-8 pb-4" style={{ zIndex: 10 }}>
             {config.profileImage ? (
               <div
-                className="w-full rounded-xl overflow-hidden"
+                className="w-full rounded-xl overflow-hidden scale-125 -translate-y-4"
                 style={{
                   height: isMobile ? "220px" : "260px",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2)",
+                  // boxShadow: "0 8px 24px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2)",
                 }}
               >
                 <img
