@@ -12,6 +12,22 @@ export const metadata: Metadata = {
   title: "Syafaruddin - Software Engineer",
   description: "Software Engineer showcasing projects and experience",
   generator: "v0.app",
+  metadataBase: new URL("https://syafar.vercel.app"),
+  openGraph: {
+    title: "Syafaruddin - Software Engineer",
+    description: "Software Engineer showcasing projects and experience",
+    url: "https://syafar.vercel.app",
+    siteName: "Portofolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 759,
+        alt: "Preview portofolio syafar",
+      },
+    ],
+    type: "website",
+  },
 }
 
 export default function RootLayout({
